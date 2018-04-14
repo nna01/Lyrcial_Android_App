@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/back1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView4"
+                android:layout_gravity="center"
+                android:textColor="@color/textcolor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="00:00"
+                android:id="@+id/timeView1"
+                android:textColor="@color/textcolor"
+                />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="00:00"
+                android:id="@+id/timeView2"
+                android:textColor="@color/textcolor"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <SeekBar
+
+                android:layout_margin="5dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:id="@+id/forward"
+                android:background="@drawable/previous"
+
+                />
+
+            <Button
+                android:layout_marginLeft="25dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+
+                android:id="@+id/pause"
+                android:background="@drawable/pause"
+                />
+
+            <Button
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+
+                android:id="@+id/play"
+
+                android:background="@drawable/play"
+                />
+
+            <Button
+
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:id="@+id/backward"
+                android:background="@drawable/next"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="time"
+                android:id="@+id/texttime"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.09"
+                android:textColor="@color/textcolor"/>
+
+            <TextView
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_weight="0.44"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:id="@+id/showLyrics"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textcolor"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
